@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sla {
+    display: flex;
+    justify-content: space-between;
+}
+
+#easy {
+    position: relative;
+    left: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+a::before {
+    content: "•";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.Arthur {
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    margin: 20px 0;
+    height: 2px;
+}
+
+#jornal {
+    padding: 10px;
+}
+
+.linha {
+    width: 100%;
+    margin: 20px 0;
+    height: 2px;
+    background-color: #0000006f;
+}
+
+.linha2 {
+    width: 2px;
+    height: 170%;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pag {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.info {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.6;
+    width: 600px;
+    padding: 10px;
+    color: #333;
+    top: 40%;
+    left: 40%;
+}
+
+.texto {
+    margin: 20px;
+}
+
+.info img {
+    width: 600px;
+    height: 500px;
+}
+
+.video {
+    float: right;
+    margin-top: -1210px;
+    margin-right: 80px;
+    width: 600px;
+    height: 400px;
+}
+
+.sla2 {
+    float: right;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.6;
+    width: 600px;
+    padding: 5px;
+    color: #333;
+    margin-top: -51%;
+    margin-right: 80px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    .video {
+        width: 90%;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .sla2 {
+        width: 90%;
+        float: none;
+        margin: 20px auto;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info img {
+        width: 100%;
+        height: auto;
+    }
+
+    .linha2 {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .sla {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #easy {
+        left: 0;
+    }
+
+    .pag {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .sla2 {
+        font-size: 18px;
+    }
+}
